@@ -17,5 +17,6 @@ public class TestController extends HttpServlet {
 		var xxx = req.getParameter("xxx");
 		req.setAttribute("nickname", xxx);
 		req.getRequestDispatcher("/index.jsp").forward(req, resp);
+		System.out.println("yyy");
 	}
 }
